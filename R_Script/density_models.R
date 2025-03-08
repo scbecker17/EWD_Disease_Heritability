@@ -91,6 +91,7 @@ IDn_grm_hro <- brm(
   set.seed(2595), file = "Output/DensityModels/brm_IDn_GRM_HRO_V1"
 )
 
+save(IDn_grm_hro, file = "Output/DensityModels/brm_IDn_GRM_HRO_V1.rda")
 summary(IDn_grm_hro)
 plot(IDn_grm_hro)
 
@@ -105,6 +106,7 @@ IDn_grm <- brm(
   set.seed(2595), file = "Output/DensityModels/brm_IDn_GRM_V1"
 )
 
+save(IDn_grm_hro, file = "Output/DensityModels/brm_IDn_GRM_V1.rda")
 summary(IDn_grm)
 plot(IDn_grm)
 

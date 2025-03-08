@@ -181,6 +181,8 @@ YearsHealthy_ID_grm_hro <- brm(
   set.seed(2595), file = "Output/Poisson/brm_YH_ID_GRM_HRO_V1"
 )
 
+save(YearsHealthy_ID_grm_hro, file = "Output/Poisson/brm_YH_ID_GRM_HRO_V1.rda")
+
 YearsHealthy_ID_grm <- brm(
   f.YH_ID_grm,
   prior = priorl1,
@@ -192,6 +194,8 @@ YearsHealthy_ID_grm <- brm(
   set.seed(2595), file = "Output/Poisson/brm_YH_ID_GRM_V1"
 )
 
+save(YearsHealthy_ID_grm, file = "Output/Poisson/brm_YH_ID_GRM_V1.rda")
+
 YearsHealthy_grm <- brm(
   f.YH_grm,
   prior = priorl1,
@@ -202,6 +206,8 @@ YearsHealthy_grm <- brm(
   threads = threading(2),
   set.seed(2595), file = "Output/Poisson/brm_YH_GRM_V2"
 )
+
+save(YearsHealthy_grm, file = "Output/Poisson/brm_YH_GRM_V2.rda")
 
 YearsDiseased_ID_grm_hro <- brm(
   f.YD_ID_grm_hro,
